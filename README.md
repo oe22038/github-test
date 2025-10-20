@@ -50,6 +50,7 @@ git push origin {変更を反映させたいリモートブランチ名}
 ```
 ---
 </details>
+<br>
 
 # GitHub Flow
 今回使うブランチ戦略。**Pull Request**を使う。
@@ -64,7 +65,12 @@ git push origin {変更を反映させたいリモートブランチ名}
 * `feature/xxxx`ブランチ  
     開発する機能に応じて作成。（xxxx: 開発する機能の内容）
 
+<br>
+
+:::note info
+インフォメーション
+infoは省略可能です。
+:::
 
 # 運用テスト
-
-
+ブランチを切ってファイルを追加し、
