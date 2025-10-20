@@ -94,19 +94,18 @@ end
 
 <br>
 
-`develop`ブランチに移動してから、新規ブランチを作成します。  
+`develop`ブランチに切り替えてから、新規ブランチを作成します。  
 （＊には図の通り、a, b, c, dが入ります）
 ```
-git checkout develop
-git checkout -b feature/＊
+git checkout develop        # developブランチに切り替え
+git checkout -b feature/＊  # feature/＊ブランチを作成し、そのブランチに切り替え
 ```
 <br>
 
-この状態で以下のコマンドを実行して、自分の作業ブランチに移動できているか確認  
+この状態で以下のコマンドを実行して、自分の作業ブランチに切り替えられているか確認  
 ```
 git branch
 ```
-
 <br>
 
 ## ファイルの追加
@@ -119,7 +118,7 @@ git branch
 ```
 github-test
  ┣━ x.txt
- ┗━ a.txt   /*追加したファイル*/
+ ┗━ a.txt   # 追加したファイル
 ```
 <br>
 
@@ -135,3 +134,8 @@ GitHubに移動し、自分の作業ブランチを確認すると、ファイ�
 <br>
 
 ## PRの作成
+PRを作成し、`develop`ブランチへのマージを行います。
+
+![pr_koko](image.png)
+
+> 画像を貼るのが面倒なので、teamsでやります...
