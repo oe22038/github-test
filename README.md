@@ -2,10 +2,11 @@
 
 <details open><summary>主なコマンド</summary>
 
-### リポジトリをクローン
+## リポジトリをクローン
 ```
 git clone {リポジトリのurl}
 ```
+<br>
 
 ## 作業ブランチを作って切り替え
 ```
@@ -31,6 +32,7 @@ git branch
 ```
 git pull origin {リモートブランチ名}
 ```
+<br>
 
 ## ファイル編集後
 編集内容を確認
@@ -45,11 +47,11 @@ git add {変更を反映させたいファイル名}
 git commit -m "コミットメッセージ"
 git push origin {変更を反映させたいリモートブランチ名}
 ```
-
 </details>
 
-## GitHub Flow
+# GitHub Flow
 今回使うブランチ戦略。**Pull Request**を使う
+<br>
 
 * `main`ブランチ
     安定ブランチ。常にリリース可能なソースコードを管理。    
@@ -61,5 +63,6 @@ git push origin {変更を反映させたいリモートブランチ名}
     開発する機能に応じて作成。（xxxx: 開発する機能の内容）
 
 
-## 運用テスト
+# 運用テスト
+
 
