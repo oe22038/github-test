@@ -48,6 +48,8 @@ git add {変更を反映させたいファイル名}
 git commit -m "コミットメッセージ"
 git push origin {変更を反映させたいリモートブランチ名}
 ```
+> `git add .`とすることで、すべてのファイルの変更を`add`できます
+
 ---
 </details>
 <br>
@@ -89,3 +91,47 @@ D0 --> C1([feature/c])
 D0 --> E1([feature/d])
 end
 ```
+
+<br>
+
+`develop`ブランチに移動してから、新規ブランチを作成します。  
+（＊には図の通り、a, b, c, dが入ります）
+```
+git checkout develop
+git checkout -b feature/＊
+```
+<br>
+
+この状態で以下のコマンドを実行して、自分の作業ブランチに移動できているか確認  
+```
+git branch
+```
+
+<br>
+
+## ファイルの追加
+エクスプローラを開き、（`explorer .`）テキストファイルを作成します。  
+ファイル名は、自分の作業ブランチ名のアルファベットにしておいてください。  
+（コマンドでやってもok）
+<br>
+
+`feature/a`ブランチなら、`github-test`フォルダは以下のようになっているはず
+```
+github-test
+ ┣━ x.txt
+ ┗━ a.txt   /*追加したファイル*/
+```
+<br>
+
+ファイルを作成できたので、ローカルに反映させます。
+```
+git add .
+git commit -m "Add ＊.txt"
+git push origin feature/＊
+```
+<br>
+
+GitHubに移動し、自分の作業ブランチを確認すると、ファイルの作成が反映されているはずです。
+<br>
+
+## PRの作成
