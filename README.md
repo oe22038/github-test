@@ -1,6 +1,6 @@
 # GitHub 運用テスト
 
-<details open><summary>主なコマンド</summary>
+<details><summary>主なコマンド</summary>
 
 ## リポジトリをクローン
 ```
@@ -27,6 +27,7 @@ git checkout {作りたいブランチ名（feature/xxxx）}
 ```
 git branch
 ```
+<br>
 
 ## リポジトリの変更を取り込む
 ```
@@ -47,19 +48,20 @@ git add {変更を反映させたいファイル名}
 git commit -m "コミットメッセージ"
 git push origin {変更を反映させたいリモートブランチ名}
 ```
+---
 </details>
 
 # GitHub Flow
-今回使うブランチ戦略。**Pull Request**を使う
+今回使うブランチ戦略。**Pull Request**を使う。
 <br>
 
-* `main`ブランチ
+* `main`ブランチ  
     安定ブランチ。常にリリース可能なソースコードを管理。    
 
-* `develop`ブランチ
+* `develop`ブランチ  
 	`main`ブランチから派生したブランチ。開発中の各ブランチの`merge`先。
 
-* `feature/xxxx`ブランチ
+* `feature/xxxx`ブランチ  
     開発する機能に応じて作成。（xxxx: 開発する機能の内容）
 
 
