@@ -2,7 +2,7 @@
 
 <details open><summary>主なコマンド</summary>
 
-## リポジトリをクローン
+### リポジトリをクローン
 ```
 git clone {リポジトリのurl}
 ```
@@ -11,19 +11,16 @@ git clone {リポジトリのurl}
 ```
 git checkout -b {作りたいブランチ名（feature/xxxx）}
 ```
-<br>
 
 - ブランチ作成だけ
 ```
 git branch {作りたいブランチ名（feature/xxxx）}
 ``` 
-<br>
 
 - ブランチの切り替え
 ```
 git checkout {作りたいブランチ名（feature/xxxx）}
 ```
-<br>
 
 - 作業ブランチの確認
 ```
@@ -65,3 +62,4 @@ git push origin {変更を反映させたいリモートブランチ名}
 
 
 ## 運用テスト
+
