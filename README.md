@@ -67,8 +67,25 @@ git push origin {変更を反映させたいリモートブランチ名}
 
 <br>
 
-> Pull Request（PR）
+> Pull Request（PR）  
 > コードの変更を行なった際、ほかの人にレビューを依頼し、問題がなければメインのコードベースにマージするための機能
+<br>
+
 
 # 運用テスト
-ブランチを切ってファイルを追加し、
+ブランチを切ってファイルを追加し、PRを作成して`develop`ブランチにマージする。
+<br>
+
+## 1. 作業ブランチの作成
+図のような感じで、`develop`ブランチから作業ブランチを切り分けます。
+```mermaid
+flowchart LR
+subgraph repo[ ]
+direction TB
+M0([main]) --> D0([develop])
+D0 --> A1([feature/a])
+D0 --> B1([feature/b])
+D0 --> C1([feature/c])
+D0 --> E1([feature/d])
+end
+```
