@@ -1,23 +1,61 @@
 # GitHub 運用テスト
-例えとして、弁当を作ってみます
 
-<details><summary>主なコマンド</summary>
+---
+<details open><summary>主なコマンド</summary>
 
-#### リポジトリをクローン
+## リポジトリをクローン
 ```
 git clone {リポジトリのurl}
 ```
 
-#### 作業ブランチを作って切り替え
+---
+## 作業ブランチを作って切り替え
 ```
 git checkout -b {作りたいブランチ名（feature/xxxx）}
 ```
+<br>
+
 - ブランチ作成だけ
-    `git branch {作りたいブランチ名（feature/xxxx）}`
-- ブランチの切り替え：
-    `git chekuout {作りたいブランチ名（feature/xxxx）}`
+```
+git branch {作りたいブランチ名（feature/xxxx）}
+``` 
+<br>
+
+- ブランチの切り替え
+```
+git checkout {作りたいブランチ名（feature/xxxx）}
+```
+<br>
+
+- 作業ブランチの確認
+```
+git branch
+```
+
+---
+## リポジトリの変更を取り込む
+```
+git pull origin {リモートブランチ名}
+```
+
+---
+## ファイル編集後
+編集内容を確認
+```
+git status
+```
+<br>
+
+変更を反映
+```
+git add {変更を反映させたいファイル名}
+git commit -m "コミットメッセージ"
+git push origin {変更を反映させたいリモートブランチ名}
+```
 
 </details>
+
+---
 
 ## GitHub Flow
 今回使うブランチ戦略。**Pull Request**を使う
