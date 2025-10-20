@@ -1,6 +1,5 @@
 # GitHub 運用テスト
 
----
 <details open><summary>主なコマンド</summary>
 
 ## リポジトリをクローン
@@ -8,7 +7,6 @@
 git clone {リポジトリのurl}
 ```
 
----
 ## 作業ブランチを作って切り替え
 ```
 git checkout -b {作りたいブランチ名（feature/xxxx）}
@@ -32,13 +30,11 @@ git checkout {作りたいブランチ名（feature/xxxx）}
 git branch
 ```
 
----
 ## リポジトリの変更を取り込む
 ```
 git pull origin {リモートブランチ名}
 ```
 
----
 ## ファイル編集後
 編集内容を確認
 ```
@@ -55,8 +51,6 @@ git push origin {変更を反映させたいリモートブランチ名}
 
 </details>
 
----
-
 ## GitHub Flow
 今回使うブランチ戦略。**Pull Request**を使う
 
@@ -68,5 +62,6 @@ git push origin {変更を反映させたいリモートブランチ名}
 
 * `feature/xxxx`ブランチ
     開発する機能に応じて作成。（xxxx: 開発する機能の内容）
+
 
 ## 運用テスト
